@@ -6,7 +6,7 @@ import { GoogleAuthProvider, onAuthStateChanged, signInWithPopup, signOut } from
 import { addDoc, collection, getDocs, orderBy, query, serverTimestamp, updateDoc, doc, arrayUnion } from "firebase/firestore";
 import { getDownloadURL, ref as storageRef, uploadBytes } from "firebase/storage";
 
-const SERVER_URL = "http://localhost:5180";
+const SERVER_URL = "https://suryarepooffi.onrender.com";
 const ALLOWED_EMAILS = ["subeeshpacl@gmail.com"];
 
 const PAGE_SIZES = {

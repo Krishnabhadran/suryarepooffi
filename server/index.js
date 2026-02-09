@@ -12,6 +12,10 @@ const PORT = process.env.PORT || 5179;
 app.use(cors());
 app.use(express.json({ limit: "25mb" }));
 
+app.get("/", (_req, res) => {
+  res.send("OnDocs API is running");
+});
+
 const themes = {
   light: { bg: "#ffffff", accent: "#111827" },
   dark: { bg: "#0b1020", accent: "#e5e7eb" },
